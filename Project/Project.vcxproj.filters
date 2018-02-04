@@ -21,10 +21,24 @@
     <ClCompile Include="MainForm.cpp">
       <Filter>Формы</Filter>
     </ClCompile>
+    <ClCompile Include="TextCodeForm.cpp">
+      <Filter>Формы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainForm.h">
       <Filter>Формы</Filter>
     </ClInclude>
+    <ClInclude Include="TextCodeForm.h">
+      <Filter>Формы</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <Filter>Файлы ресурсов</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextCodeForm.resx">
+      <Filter>Формы</Filter>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
