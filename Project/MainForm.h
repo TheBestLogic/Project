@@ -14,6 +14,10 @@ namespace Project {
 	/// </summary>
 	public ref class MainForm : public System::Windows::Forms::Form
 	{
+		private: System::Windows::Forms::Button^  FileCode_button;
+		private: System::Windows::Forms::Button^  TextCode_button;
+		private: System::Windows::Forms::Button^  ImageCode_button;
+	    private: System::Windows::Forms::Button^  exit_button;
 	public:
 		MainForm(void)
 		{
@@ -34,11 +38,6 @@ namespace Project {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::MenuStrip^  menuStrip1;
-	private: System::Windows::Forms::ToolStripMenuItem^  ôàéëToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem1;
-	private: System::Windows::Forms::ToolStripMenuItem^  îòêðûòüToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  çàêðûòüToolStripMenuItem;
 	protected:
 
 
@@ -55,66 +54,74 @@ namespace Project {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
-			this->ôàéëToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->îòêðûòüToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->çàêðûòüToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->menuStrip1->SuspendLayout();
+			this->FileCode_button = (gcnew System::Windows::Forms::Button());
+			this->TextCode_button = (gcnew System::Windows::Forms::Button());
+			this->ImageCode_button = (gcnew System::Windows::Forms::Button());
+			this->exit_button = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
-			// menuStrip1
+			// FileCode_button
 			// 
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->ôàéëToolStripMenuItem });
-			this->menuStrip1->Location = System::Drawing::Point(0, 0);
-			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(602, 24);
-			this->menuStrip1->TabIndex = 0;
-			this->menuStrip1->Text = L"menuStrip1";
+			this->FileCode_button->Location = System::Drawing::Point(13, 52);
+			this->FileCode_button->Name = L"FileCode_button";
+			this->FileCode_button->Size = System::Drawing::Size(75, 23);
+			this->FileCode_button->TabIndex = 0;
+			this->FileCode_button->Text = L"file_button";
+			this->FileCode_button->UseVisualStyleBackColor = true;
+			this->FileCode_button->Click += gcnew System::EventHandler(this, &MainForm::FileCode_button_Click);
 			// 
-			// ôàéëToolStripMenuItem
+			// TextCode_button
 			// 
-			this->ôàéëToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
-				this->toolStripMenuItem1,
-					this->îòêðûòüToolStripMenuItem, this->çàêðûòüToolStripMenuItem
-			});
-			this->ôàéëToolStripMenuItem->Name = L"ôàéëToolStripMenuItem";
-			this->ôàéëToolStripMenuItem->Size = System::Drawing::Size(48, 20);
-			this->ôàéëToolStripMenuItem->Text = L"Ôàéë";
+			this->TextCode_button->Location = System::Drawing::Point(13, 82);
+			this->TextCode_button->Name = L"TextCode_button";
+			this->TextCode_button->Size = System::Drawing::Size(75, 23);
+			this->TextCode_button->TabIndex = 1;
+			this->TextCode_button->Text = L"Text_button";
+			this->TextCode_button->UseVisualStyleBackColor = true;
+			this->TextCode_button->Click += gcnew System::EventHandler(this, &MainForm::TextCode_button_Click);
 			// 
-			// toolStripMenuItem1
+			// ImageCode_button
 			// 
-			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
-			this->toolStripMenuItem1->Size = System::Drawing::Size(180, 22);
-			this->toolStripMenuItem1->Text = L"toolStripMenuItem1";
+			this->ImageCode_button->Location = System::Drawing::Point(13, 112);
+			this->ImageCode_button->Name = L"ImageCode_button";
+			this->ImageCode_button->Size = System::Drawing::Size(75, 23);
+			this->ImageCode_button->TabIndex = 2;
+			this->ImageCode_button->Text = L"Img_button";
+			this->ImageCode_button->UseVisualStyleBackColor = true;
+			this->ImageCode_button->Click += gcnew System::EventHandler(this, &MainForm::ImageCode_button_Click);
 			// 
-			// îòêðûòüToolStripMenuItem
+			// exit_button
 			// 
-			this->îòêðûòüToolStripMenuItem->Name = L"îòêðûòüToolStripMenuItem";
-			this->îòêðûòüToolStripMenuItem->Size = System::Drawing::Size(180, 22);
-			this->îòêðûòüToolStripMenuItem->Text = L"Îòêðûòü";
-			// 
-			// çàêðûòüToolStripMenuItem
-			// 
-			this->çàêðûòüToolStripMenuItem->Name = L"çàêðûòüToolStripMenuItem";
-			this->çàêðûòüToolStripMenuItem->Size = System::Drawing::Size(180, 22);
-			this->çàêðûòüToolStripMenuItem->Text = L"Çàêðûòü";
+			this->exit_button->Location = System::Drawing::Point(13, 142);
+			this->exit_button->Name = L"exit_button";
+			this->exit_button->Size = System::Drawing::Size(75, 23);
+			this->exit_button->TabIndex = 3;
+			this->exit_button->Text = L"exit_button";
+			this->exit_button->UseVisualStyleBackColor = true;
+			this->exit_button->Click += gcnew System::EventHandler(this, &MainForm::exit_button_Click);
 			// 
 			// MainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(602, 261);
-			this->Controls->Add(this->menuStrip1);
-			this->MainMenuStrip = this->menuStrip1;
+			this->Controls->Add(this->exit_button);
+			this->Controls->Add(this->ImageCode_button);
+			this->Controls->Add(this->TextCode_button);
+			this->Controls->Add(this->FileCode_button);
 			this->Name = L"MainForm";
 			this->Text = L"MainForm";
-			this->menuStrip1->ResumeLayout(false);
-			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);
-			this->PerformLayout();
 
 		}
 #pragma endregion
-	};
+	private: System::Void FileCode_button_Click(System::Object^  sender, System::EventArgs^  e) {
+	}
+	private: System::Void TextCode_button_Click(System::Object^  sender, System::EventArgs^  e) {
+	}
+private: System::Void ImageCode_button_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void exit_button_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+};
 }

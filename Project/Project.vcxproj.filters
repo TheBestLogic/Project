@@ -24,12 +24,24 @@
     <ClCompile Include="TextCodeForm.cpp">
       <Filter>Формы</Filter>
     </ClCompile>
+    <ClCompile Include="FileCodeForm.cpp">
+      <Filter>Формы</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageCodeForm.cpp">
+      <Filter>Формы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainForm.h">
       <Filter>Формы</Filter>
     </ClInclude>
     <ClInclude Include="TextCodeForm.h">
+      <Filter>Формы</Filter>
+    </ClInclude>
+    <ClInclude Include="FileCodeForm.h">
+      <Filter>Формы</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageCodeForm.h">
       <Filter>Формы</Filter>
     </ClInclude>
   </ItemGroup>

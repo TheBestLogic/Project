@@ -10,12 +10,12 @@ namespace Project {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для TextCodeForm
+	/// Сводка для ImageCodeForm
 	/// </summary>
-	public ref class TextCodeForm : public System::Windows::Forms::Form
+	public ref class ImageCodeForm : public System::Windows::Forms::Form
 	{
 	public:
-		TextCodeForm(void)
+		ImageCodeForm(void)
 		{
 			InitializeComponent();
 			//
@@ -27,13 +27,19 @@ namespace Project {
 		/// <summary>
 		/// Освободить все используемые ресурсы.
 		/// </summary>
-		~TextCodeForm()
+		~ImageCodeForm()
 		{
 			if (components)
 			{
 				delete components;
 			}
 		}
+	
+
+	protected:
+
+
+	protected:
 
 	private:
 		/// <summary>
@@ -48,14 +54,23 @@ namespace Project {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			
+			// 
+			// ImageCodeForm
+			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(602, 261);
-			this->Name = L"MainForm";
-			this->Text = L"MainForm";
+			this->ClientSize = System::Drawing::Size(284, 261);
+			this->Controls->Add(this->exit_button);
+			this->Controls->Add(this->ImageCode_button);
+			this->Controls->Add(this->TextCode_button);
+			this->Controls->Add(this->FileCode_button);
+			this->Name = L"ImageCodeForm";
+			this->Text = L"ImageCodeForm";
 			this->ResumeLayout(false);
-			this->PerformLayout();
+
 		}
 #pragma endregion
-	};
+
+};
 }

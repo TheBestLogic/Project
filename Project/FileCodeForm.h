@@ -10,12 +10,12 @@ namespace Project {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для TextCodeForm
+	/// Сводка для FileCodeForm
 	/// </summary>
-	public ref class TextCodeForm : public System::Windows::Forms::Form
+	public ref class FileCodeForm : public System::Windows::Forms::Form
 	{
 	public:
-		TextCodeForm(void)
+		FileCodeForm(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace Project {
 		/// <summary>
 		/// Освободить все используемые ресурсы.
 		/// </summary>
-		~TextCodeForm()
+		~FileCodeForm()
 		{
 			if (components)
 			{
@@ -51,10 +51,12 @@ namespace Project {
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(602, 261);
-			this->Name = L"MainForm";
-			this->Text = L"MainForm";
 			this->ResumeLayout(false);
 			this->PerformLayout();
+			this->components = gcnew System::ComponentModel::Container();
+			this->Size = System::Drawing::Size(300,300);
+			this->Text = L"FileCodeForm";
+			this->Padding = System::Windows::Forms::Padding(0);
 		}
 #pragma endregion
 	};
