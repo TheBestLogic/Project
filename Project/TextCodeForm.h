@@ -14,48 +14,38 @@ namespace Project {
 	/// </summary>
 	public ref class TextCodeForm : public System::Windows::Forms::Form
 	{
+	private: System::Windows::Forms::TextBox^  IN_textBox;
+	private: System::Windows::Forms::TextBox^  OUT_textBox;
+	private: System::Windows::Forms::TextBox^  GetKey_textBox;
+	private: System::Windows::Forms::Button^  GetKey_button;
+	private: System::Windows::Forms::Button^  ClearKey_button;
+	private: System::Windows::Forms::Button^  ClearText_button;
+	private: System::Windows::Forms::Button^  CopyText_button;
+	private:
+		System::ComponentModel::Container ^components;
+
 	public:
-		TextCodeForm(void)
-		{
-			InitializeComponent();
-			//
-			//TODO: добавьте код конструктора
-			//
-		}
+		TextCodeForm(void);
 
 	protected:
-		/// <summary>
-		/// ќсвободить все используемые ресурсы.
-		/// </summary>
-		~TextCodeForm()
-		{
-			if (components)
-			{
-				delete components;
-			}
-		}
+		~TextCodeForm();
 
-	private:
-		/// <summary>
-		/// ќб€зательна€ переменна€ конструктора.
-		/// </summary>
-		System::ComponentModel::Container ^components;
+	
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
 		/// “ребуемый метод дл€ поддержки конструктора Ч не измен€йте 
 		/// содержимое этого метода с помощью редактора кода.
 		/// </summary>
-		void InitializeComponent(void)
-		{
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(602, 261);
-			this->Name = L"MainForm";
-			this->Text = L"MainForm";
-			this->ResumeLayout(false);
-			this->PerformLayout();
-		}
+		void InitializeComponent(void);
 #pragma endregion
+	private: System::Void GetKey_button_Click(System::Object^  sender, System::EventArgs^  e) {
+	}
+	private: System::Void ClearKey_button_Click(System::Object^  sender, System::EventArgs^  e) {
+	}
+	private: System::Void ClearText_button_Click(System::Object^  sender, System::EventArgs^  e) {
+	}
+	private: System::Void CopyText_button_Click(System::Object^  sender, System::EventArgs^  e) {
+	}
 	};
 }

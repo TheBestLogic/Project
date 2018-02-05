@@ -136,6 +136,7 @@
   <ItemGroup>
     <ClCompile Include="FileCodeForm.cpp" />
     <ClCompile Include="ImageCodeForm.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="TextCodeForm.cpp" />
   </ItemGroup>

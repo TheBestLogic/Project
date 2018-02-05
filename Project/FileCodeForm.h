@@ -15,30 +15,12 @@ namespace Project {
 	public ref class FileCodeForm : public System::Windows::Forms::Form
 	{
 	public:
-		FileCodeForm(void)
-		{
-			InitializeComponent();
-			//
-			//TODO: добавьте код конструктора
-			//
-		}
+		FileCodeForm(void);
 
 	protected:
-		/// <summary>
-		/// ќсвободить все используемые ресурсы.
-		/// </summary>
-		~FileCodeForm()
-		{
-			if (components)
-			{
-				delete components;
-			}
-		}
+		~FileCodeForm();
 
 	private:
-		/// <summary>
-		/// ќб€зательна€ переменна€ конструктора.
-		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -46,18 +28,7 @@ namespace Project {
 		/// “ребуемый метод дл€ поддержки конструктора Ч не измен€йте 
 		/// содержимое этого метода с помощью редактора кода.
 		/// </summary>
-		void InitializeComponent(void)
-		{
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(602, 261);
-			this->ResumeLayout(false);
-			this->PerformLayout();
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"FileCodeForm";
-			this->Padding = System::Windows::Forms::Padding(0);
-		}
+		void InitializeComponent(void);
 #pragma endregion
 	};
 }

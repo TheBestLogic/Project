@@ -16,19 +16,25 @@
     <Filter Include="Формы">
       <UniqueIdentifier>{03f0b657-84ba-4877-8ce4-747a9f3bfd0f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Формы\Методы форм">
+      <UniqueIdentifier>{f7f04894-0491-4592-a580-8742d8871ca1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MainForm.cpp">
-      <Filter>Формы</Filter>
-    </ClCompile>
-    <ClCompile Include="TextCodeForm.cpp">
-      <Filter>Формы</Filter>
+    <ClCompile Include="Main.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="FileCodeForm.cpp">
-      <Filter>Формы</Filter>
+      <Filter>Формы\Методы форм</Filter>
     </ClCompile>
     <ClCompile Include="ImageCodeForm.cpp">
-      <Filter>Формы</Filter>
+      <Filter>Формы\Методы форм</Filter>
+    </ClCompile>
+    <ClCompile Include="MainForm.cpp">
+      <Filter>Формы\Методы форм</Filter>
+    </ClCompile>
+    <ClCompile Include="TextCodeForm.cpp">
+      <Filter>Формы\Методы форм</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +57,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TextCodeForm.resx">
       <Filter>Формы</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageCodeForm.resx">
+      <Filter>Файлы ресурсов</Filter>
     </EmbeddedResource>
   </ItemGroup>
 </Project>
