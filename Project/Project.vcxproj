@@ -134,6 +134,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Code.cpp" />
     <ClCompile Include="FileCodeForm.cpp" />
     <ClCompile Include="ImageCodeForm.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -141,6 +142,7 @@
     <ClCompile Include="TextCodeForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Code.h" />
     <ClInclude Include="FileCodeForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>

@@ -36,6 +36,9 @@
     <ClCompile Include="TextCodeForm.cpp">
       <Filter>Формы\Методы форм</Filter>
     </ClCompile>
+    <ClCompile Include="Code.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainForm.h">
@@ -49,6 +52,9 @@
     </ClInclude>
     <ClInclude Include="ImageCodeForm.h">
       <Filter>Формы</Filter>
+    </ClInclude>
+    <ClInclude Include="Code.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
