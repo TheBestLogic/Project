@@ -9,6 +9,6 @@ using namespace Project;
 void Main(array<String^>^ args) {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-	Project::MainForm form;
+	MainForm form;
 	Application::Run(%form);
 }

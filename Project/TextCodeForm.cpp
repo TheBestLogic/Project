@@ -109,3 +109,23 @@ void TextCodeForm::InitializeComponent(void)
 	this->PerformLayout();
 
 }
+
+System::Void TextCodeForm::GetKey_button_Click(System::Object^  sender, System::EventArgs^  e)
+{
+
+}
+
+System::Void TextCodeForm::ClearKey_button_Click(System::Object^  sender, System::EventArgs^  e)
+{
+
+}
+
+System::Void TextCodeForm::ClearText_button_Click(System::Object^  sender, System::EventArgs^  e)
+{
+
+}
+
+System::Void TextCodeForm::CopyText_button_Click(System::Object^  sender, System::EventArgs^  e)
+{
+
+}

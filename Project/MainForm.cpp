@@ -1,4 +1,7 @@
 #include "MainForm.h"
+#include "FileCodeForm.h"
+#include "TextCodeForm.h"
+#include "ImageCodeForm.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
@@ -70,22 +73,25 @@ void MainForm::InitializeComponent(void)
 
 System::Void MainForm::FileCode_button_Click(System::Object^  sender, System::EventArgs^  e)
 {
-
+	FileCodeForm form;
+	form.ShowDialog();
 }
 
 System::Void MainForm::TextCode_button_Click(System::Object^  sender, System::EventArgs^  e)
 {
-
+	TextCodeForm form;
+	form.ShowDialog();
 }
 
 System::Void MainForm::ImageCode_button_Click(System::Object^  sender, System::EventArgs^  e)
 {
-
+	ImageCodeForm form;
+	form.ShowDialog();
 }
 
 System::Void MainForm::exit_button_Click(System::Object^  sender, System::EventArgs^  e)
 {
-
+	Close();
 }
 
 MainForm::~MainForm()
